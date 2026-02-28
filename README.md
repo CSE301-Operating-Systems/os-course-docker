@@ -91,6 +91,7 @@ htop                        # Real-time process monitor
 pstree                      # Show process tree hierarchy
 cat /proc/<PID>/status      # Detailed process status
 cat /proc/<PID>/maps        # Process memory map
+cat /proc/<PID>/wchan       # Show kernel function the process is waiting in
 
 # Memory Inspection
 free -h                     # System memory usage
