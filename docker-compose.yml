@@ -1,0 +1,15 @@
+services:
+  os-lab:
+    build: .
+    container_name: os-lab
+    volumes:
+      - ./workspace:/workspace
+    stdin_open: true
+    tty: true
+    # Use tini as PID 1 (required for proper orphan re-parenting)
+    init: true
+    # Required for strace, ptrace (gdb) to work
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined

@@ -1,0 +1,29 @@
+# Compiled binaries
+*.o
+*.out
+*.exe
+a.out
+
+# Debug files
+*.dSYM/
+core
+vgcore.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker workspace (local student files)
+workspace/
